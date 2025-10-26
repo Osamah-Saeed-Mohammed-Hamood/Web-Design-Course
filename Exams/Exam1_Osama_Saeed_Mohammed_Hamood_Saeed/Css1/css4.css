@@ -1,0 +1,12 @@
+.bod4{
+    background-image: url(../images/imgs.webp);
+}
+.box{
+    position: fixed;
+    padding: 44px;
+    top: 25%;
+    right: 40%;
+    background-color: white;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/IMG-20241104-WA0011\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header ul li{
+    margin: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    transition: all 0.5s linear;
+}
+
+header ul .l a:hover{
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+header ul li input{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 30px;
+}
+
+header ul li:not(.img1){
+    margin-top: 30px;
+}
+
+/* ---------------------------------- */
+
+nav div {
+    display: flex;
+    flex-direction: row;
+}
+.section-right{
+    margin-left: 30px;
+}
+
+nav div .paragaraph {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.paragaraph a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(167, 141, 73);
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.paragaraph a:hover{
+    color: black;
+    background-color:  rgb(185, 163, 99);
+}
+
+nav div div {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+nav div div .imgs1{
+    display: flex;
+    flex-direction: row;
+}
+
+nav div div .imgs2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragaraph{
+    margin-top: 150px;   
+    color: white;
+    align-items: center;
+}
+
+.paragaraph h2{
+    font-size: 100px;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.card img{
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    margin-left: 7px;
+    transition: all 0.5s ease;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.card p{
+    font-size: 13px;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(167, 141, 73);
+    padding: 10px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 20px;
+    transition: all 0.2s 0.2s ease;
+}
+
+.card a:hover{
+    border-radius: 15px 0 15px 0;
+    background-color: rgb(221, 195, 130);
+}
+
+/* ------------------------------------------------- */
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div .img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+footer div .log{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{
+    background-color: rgb(241, 220, 165); ;
+    margin-top: 50px;
+}
+
+footer div ul li a img{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 10px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    margin: 20px;
+    transition: all 1s ease;
+}
+
+footer div ul li a img:hover{
+    background-color: inherit;
+}
+
+.log li a{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+address{
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(201, 189, 173);
+}
+

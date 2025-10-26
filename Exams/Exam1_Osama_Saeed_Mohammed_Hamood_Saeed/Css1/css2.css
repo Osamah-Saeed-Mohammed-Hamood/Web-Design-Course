@@ -1,0 +1,19 @@
+.head3{
+    text-align: center;
+}
+.bod2{
+    background-image: url(../images/img3.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.p1{
+    padding:5%;
+    
+    
+}
+.tab1{
+    background-color: white;
+    width: 100%;
+    
+}

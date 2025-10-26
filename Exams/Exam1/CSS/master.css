@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/marrakesh1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.move{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.move li{
+    margin: 30px;
+}
+
+.move li a{
+    text-decoration: none;
+    color: white;
+}
+
+.link-header{
+    transition: all 0.5s ease;
+}
+
+.link-header:hover{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgb(243, 230, 133);
+    color: black;
+}
+
+.move li:not(.image-header){
+    margin-top: 40px;
+}
+
+/* ======================================= */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 350px;
+}
+
+.left-section{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.left-section h1{
+    color: white;
+    font-size: 150px;
+    align-self: flex-start;
+}
+
+.left-section p{
+    color: white;
+}
+
+.left-section a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid rgb(192, 167, 99);
+    background-color: rgb(192, 167, 99);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    align-self: flex-start;
+    transition: all 0.5s ease;
+}
+
+.left-section a:hover{
+    color: black;
+    background-color: rgb(231, 228, 220);
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+}
+
+.section-one{
+    display: flex;
+    flex-direction: row;
+    margin-right: -80px;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: row;
+    margin-right: -80px;
+}
+.card{
+    width: calc(50%/2);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 200px 300px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    padding-bottom: 40px;
+    transition: transform 0.2s 0.1s;
+}
+
+.card:hover{
+    transform: translate(0px, -10px);
+}
+
+.card p{
+    color: white;
+}
+
+.one{
+    background-image: url(../images/sir.png);
+}
+
+.two{
+    background-image: url(../images/irq\ al-shibi.png);
+}
+
+.three{
+    background-image: url(../images/valley.png);
+}
+
+.four{
+    background-image: url(../images/orzarts.png);
+}
+
+/* ============================ */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icon a{
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+
+.social-icon a:hover{
+    background-color: inherit;
+}
+
+.social-icon a img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.lists ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lists ul li a{
+    text-decoration: none;
+    color: rgb(121, 118, 118);
+    margin: 20px;
+    transition: all 0.5s ease;
+}
+
+.lists ul li a:hover{
+    color: white;
+}
+address{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

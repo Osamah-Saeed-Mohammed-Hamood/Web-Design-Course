@@ -1,0 +1,13 @@
+.bod3{
+    background-image: url(../images/i2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.fil{
+    position: fixed;
+    background-color: rgba(250, 255, 234, 0.603);
+    padding: 44px;
+    top: 25%;
+    right: 10%;
+    border-radius: 10%;
+}
