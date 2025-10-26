@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="USF-8">
+        <title>Home Work 3</title>
+    </head>
+    <body >
+        <table border="2">
+            <caption>Cost of Food</caption>
+            <tr>
+                <th  >
+                     Id
+                </th>
+                <th>
+                    Food
+                </th>
+                <th>
+                    Cost
+                </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rice </td>
+                <td>25$</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Checken</td>
+                <td>35$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Board</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>70$</td>
+            </tr>
+         </table>
+         <hr>
+        <div>
+        <table border="2">
+            <caption> in another case</caption>
+            <tr>
+                <th>id</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td rowspan="2">Total</td>
+            </tr>
+            <tr>
+                <th>Food</th>
+                <td>Rice</td>
+                <td>Chicken</td>
+                <td>Board</td>
+            </tr>
+            <tr>
+                <th>Cost</th>
+                <td>25$</td>
+                <td>35$</td>
+                <td>10$</td>
+                <td>70$</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <audio controls autoplay loop muted>
+        <source src="../Book_Store/All_Lecture/Media/قم_وحيداً_.mp3" type="audio/mp3">
+        <source src="../Book_Store/All_Lecture/Media/قم_وحيداً_.wav" type="audio/wav">
+        <source src="../Book_Store/All_Lecture/Media/قم_وحيداً_.ogg" type="audio/ogg">
+        Your Prowser Dose not Support The Audio 
+    </audio>
+    <hr>
+    <video controls autoplay loop muted width="500" height="300" poster="../Book_Store/All_Lecture/home/تنزيل.jpeg">
+        <source src="../Book_Store/All_Lecture/Media/Abdulqader_Qawza_-_Alqabqaba___عبدالقادر_قوزع_-_القَبقَبَة(360p).mp4" type="video/mp4">
+        <source src="../Book_Store/All_Lecture/Media/Abdulqader_Qawza_-_Alqabqaba___عبدالقادر_قوزع_-_القَبقَبَة(360p).ogg" type="video/ogg">
+        Your Prowser Dose not Support The Vedio
+    </video>
+    <hr>
+    <hr>
+    <form action="HW3.php" method="get" autocomplete="on" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Information For Traviling</legend>
+            <div>
+                <div>
+                    <label for="std_name">NAME : </label>
+                    <input type="text" required placeholder="Write Your Name " id="std_name">
+                </div>
+                <div>
+                    <label for="std_age">AGE :</label>
+                    <input type="number" required id="std_age" maxlength="2" min="3">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label>Gender  :</label>
+                    <input type="radio" required id="male" name="gender" value="male" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" required id="female" name="gender" value="female">
+                    <label for="female">Female </label>
+                </div>
+                <div>
+                    <label for="std_image">Picture for Your Personality : </label>
+                    <input type="file" id="std_image">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="std_edu">Educational Qualification : </label>
+                    <input type="text" required id="std_edu" list="List_edu">
+                    <datalist id="List_edu">
+                        <option value="Secondary School">Secondary School</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        <option value="Master's Degree">Master's Degree</option>
+                        <option value="Ph Degree">Ph Degree</option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="std_year">Year for Graduation : </label>
+                    <select id="std_year">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="trv_color">Color of Your Bage : </label>
+                    <input type="color" id="trv_color">
+                </div>
+                <div>
+                    <b>Your Skills : </b>
+                    <br>
+                    <input type="checkbox" value="Draw" id="sk1">
+                    <label for="sk1">Drawing</label>
+                    <br>
+                    <input type="checkbox" value="Swim" id="sk2">
+                    <label for="sk2">Swimming</label>
+                    <br>
+                    <input type="checkbox" value="Read" id="sk3">
+                    <label for="sk3">Reading</label>
+                    <br>
+                    <input type="checkbox" value="Programmer" id="sk4">
+                    <label for="sk4">Programmer</label>
+                    <br>
+                </div>
+            </div>
+            <div>
+                <label for="trv_am">Time for Your Traviling : </label>
+                <input type="radio" id="mor" name="trv_am" value="in the morning" checked>
+                <label for="mor">In the Morning</label>
+                <input type="radio" id="eve" name="trv_am" value="in the evening" >
+                <label for="eve">In the evening</label>
+            </div>
+            <div>
+                <label >If you have <b>Notes</b> Write there : </label>
+                <textarea name="note"  rows="6" cols="40" placeholder="Write Your Note "></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send" id="register">
+                <input type="reset" value="Remove" id="cancel">
+                <button id="edit">Edit</button>
+                <button id="show">Show</button>
+                <button id="print">Print</button>
+            </div>
+            <hr>
+            <div>
+                <input type="hidden">
+                Password :<input type="password" required>
+                <br>
+                Number : <input type="number" max="70" min="10" maxlength="2">
+                <br>
+                Search :<input type="search" autofocus>
+                <br>
+                URL :<input type="url" required>
+                <br>
+                Date for Week :<input type="week" >
+                <br>
+                Time : <input type="time" >
+                <br>
+                Date :<input type="date" >
+                <br>
+                Date for the Computer : <input type="datetime-local" >
+                <br>
+                Date for Month and Year : <input type="month" >
+                <br>
+                <label >Range : </label>
+                <input type="range" name="range" step="10" min="0" max="100">
+                <br>
+                <label for="">UserName :</label>
+                <input type="text" value="Osama" readonly>
+                <br>
+                <label for="">Email : </label>
+                <input type="email" required placeholder="Your Email @gmail.com" value="em@gmail.com" name="mail">
+            </div>
+            <div>
+                <disabled>
+                    <br>
+                    <label for="job">Jobs : </label>
+                    <select name="job" id="job" multiple>
+                        <optgroup label="Hospital">
+                            <option value="Doctor" selected>Doctor</option>
+                            <option value="Nurse">Nurse</option>
+                            <option value="Pharmacist">Pharmacist</option>
+                        </optgroup>
+                        <optgroup label="School">
+                            <option value="Teacher">Teacher</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Student">Student</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <input type="submit">
+                    <input type="image" src="photo.jpg" title="Sent" style="width: 70px;height: 70px;">
+                </disabled>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <hr>
+    <img src="photo.jpg" alt="IBB Univercity " usemap="#UNIv" width="400px" height="300px">
+    <map name="UNIv">
+        <area shape="rect" coords="20,130,122,240" href="Lecture1.html" alt="">
+    </map>
+    </body>
+</html>

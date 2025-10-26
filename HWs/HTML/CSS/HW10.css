@@ -1,0 +1,25 @@
+.parent{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    line-height: 200px;
+}
+
+.item{
+    background-color: rgb(178, 131, 222);
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 601px) and (max-width: 992px){
+    .parent{
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 49%;
+    }
+}

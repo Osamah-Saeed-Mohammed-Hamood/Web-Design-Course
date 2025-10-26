@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWJava1</title>
+    <script src="Java Script/HW12.js"></script>
+</head>
+<body dir="rtl">
+    <h1>العمليات الحسابية</h1>
+    <form >
+        <input type="text" name="" id="num1">
+        <input type="text" name="" id="num2">
+        <input type="text" name="" id="num3" readonly>
+        <button onclick="sum()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+    </form>
+    <script>
+        function sum(){
+            let n1=parseFloat(document.getElementById('num1').value);
+            let n2=parseFloat(document.getElementById('num2').value);
+            document.getElementById('num3').value4=Number(n1)+Number(n2);
+        }
+        function sub(){
+            let n1=parseFloat(document.getElementById('num1').value);
+            let n2=parseFloat(document.getElementById('num2').value);
+            document.getElementById('num3').value4=Number(n1)-Number(n2);
+        }
+        function mul(){
+            let n1=parseFloat(document.getElementById('num1').value);
+            let n2=parseFloat(document.getElementById('num2').value);
+            document.getElementById('num3').value4=Number(n1)*Number(n2);
+        }
+        function div(){
+            let n1=parseFloat(document.getElementById('num1').value);
+            let n2=parseFloat(document.getElementById('num2').value);
+            document.getElementById('num3').value4=Number(n1)/Number(n2);
+        }
+    </script>
+    <br>
+    <h2>تحويل العملات</h2>
+    <form>
+        <input type="number" placeholder="$" id="dollar">
+        <input type="number" placeholder="YER" id="yer">
+    </form>
+    <script>
+        let dollar=document.getElementById('dollar');
+        let real=document.getElementById('yer');
+        dollar.onkeyup=function(){
+            real.value=dollar.value*535;
+        }
+        real.onkeyup=function(){
+            dollar.value=real.value/535;
+        }
+    </script>
+    <div class="div1">
+        <h4>التحويل من الدولار الى الريال</h4>
+        <input type="text" id="Dollar">
+        <span id="message"></span>
+        <button onclick="convertDollarToRial()">تحويل</button>
+        <span class="span1" id="convertresult"></span>
+    </div>
+
+    <div class="div1">
+        <h4>قيمة العملة بالريال اليمني</h4>
+        <input type="text" id="mony">
+        <span id="message2"></span>
+        <select id="currency">
+            <option value="600">دولار</option>
+            <option value="156">ريال سعودي</option>
+            <option value="500">جنية</option>
+        </select>
+        <button onclick="convertDollarToRia2()">تحويل</button>
+        <span class="span1" id="convertresult2"></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background-image: url(../Images/تنزيل.jpeg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+}
+
+p{
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgb(108, 16, 220);
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.text{
+    font-size: large;
+    font-weight: bold;
+    counter-reset: rgb(102,70,28);
+}
+
+.border1{
+    border-width: 2px;
+    border-style: double;
+    border-color: rgb(221, 189, 189);
+    border : 1px solid rgb(106, 106, 191);
+    border-left-color: red;
+    border-right-width: 3px;
+    border-top-style: ridge;
+    border-bottom: 10px groove rgb(207, 120, 2);
+    border-radius: 100px;
+}
